@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CallCentre.xcodeproj">
+      location = "self:/Users/mikerazor/Documents/_Projects/4/CallCentre/CallCenter.xcodeproj">
    </FileRef>
 </Workspace>

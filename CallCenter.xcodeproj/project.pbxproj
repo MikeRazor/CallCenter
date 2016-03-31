@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		119DE89C1CAD6EB70087E0F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DE89B1CAD6EB70087E0F0 /* AppDelegate.swift */; };
-		119DE89E1CAD6EB70087E0F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DE89D1CAD6EB70087E0F0 /* ViewController.swift */; };
 		119DE8A11CAD6EB70087E0F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119DE89F1CAD6EB70087E0F0 /* Main.storyboard */; };
 		119DE8A31CAD6EB70087E0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119DE8A21CAD6EB70087E0F0 /* Assets.xcassets */; };
-		119DE8A61CAD6EB70087E0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119DE8A41CAD6EB70087E0F0 /* LaunchScreen.storyboard */; };
+		119DE9A61CAD758A0087E0F0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DE9A51CAD758A0087E0F0 /* BaseViewController.swift */; };
+		119DE9A81CAD75DE0087E0F0 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DE9A71CAD75DE0087E0F0 /* AuthViewController.swift */; };
+		119DE9AA1CAD76010087E0F0 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DE9A91CAD76010087E0F0 /* DashboardViewController.swift */; };
+		119DE9AC1CAD76920087E0F0 /* DefaultEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DE9AB1CAD76920087E0F0 /* DefaultEmployeeViewController.swift */; };
+		119DE9AE1CAD76CF0087E0F0 /* DefaultHRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119DE9AD1CAD76CF0087E0F0 /* DefaultHRViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		119DE8981CAD6EB70087E0F0 /* CallCentre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallCentre.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		119DE8981CAD6EB70087E0F0 /* CallCenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallCenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119DE89B1CAD6EB70087E0F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		119DE89D1CAD6EB70087E0F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		119DE8A01CAD6EB70087E0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		119DE8A21CAD6EB70087E0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		119DE8A51CAD6EB70087E0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		119DE8A71CAD6EB70087E0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		119DE9A51CAD758A0087E0F0 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		119DE9A71CAD75DE0087E0F0 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		119DE9A91CAD76010087E0F0 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		119DE9AB1CAD76920087E0F0 /* DefaultEmployeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEmployeeViewController.swift; sourceTree = "<group>"; };
+		119DE9AD1CAD76CF0087E0F0 /* DefaultHRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultHRViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +44,7 @@
 		119DE88F1CAD6EB70087E0F0 = {
 			isa = PBXGroup;
 			children = (
-				119DE89A1CAD6EB70087E0F0 /* CallCentre */,
+				119DE89A1CAD6EB70087E0F0 /* CallCenter */,
 				119DE8991CAD6EB70087E0F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +52,92 @@
 		119DE8991CAD6EB70087E0F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				119DE8981CAD6EB70087E0F0 /* CallCentre.app */,
+				119DE8981CAD6EB70087E0F0 /* CallCenter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		119DE89A1CAD6EB70087E0F0 /* CallCentre */ = {
+		119DE89A1CAD6EB70087E0F0 /* CallCenter */ = {
 			isa = PBXGroup;
 			children = (
+				119DE8AD1CAD73B60087E0F0 /* Classes */,
 				119DE89B1CAD6EB70087E0F0 /* AppDelegate.swift */,
-				119DE89D1CAD6EB70087E0F0 /* ViewController.swift */,
 				119DE89F1CAD6EB70087E0F0 /* Main.storyboard */,
 				119DE8A21CAD6EB70087E0F0 /* Assets.xcassets */,
-				119DE8A41CAD6EB70087E0F0 /* LaunchScreen.storyboard */,
 				119DE8A71CAD6EB70087E0F0 /* Info.plist */,
 			);
-			path = CallCentre;
+			path = CallCenter;
+			sourceTree = "<group>";
+		};
+		119DE8AD1CAD73B60087E0F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				119DE99E1CAD74890087E0F0 /* Model */,
+				119DE99F1CAD74890087E0F0 /* Presenter */,
+				119DE9A01CAD74890087E0F0 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		119DE99E1CAD74890087E0F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = Classes/Model;
+			sourceTree = "<group>";
+		};
+		119DE99F1CAD74890087E0F0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				119DE9A21CAD75530087E0F0 /* Employee */,
+				119DE9A31CAD75530087E0F0 /* HR */,
+				119DE9A41CAD75530087E0F0 /* Utills */,
+				119DE9A71CAD75DE0087E0F0 /* AuthViewController.swift */,
+				119DE9A91CAD76010087E0F0 /* DashboardViewController.swift */,
+			);
+			name = Presenter;
+			path = Classes/Presenter;
+			sourceTree = "<group>";
+		};
+		119DE9A01CAD74890087E0F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = Classes/View;
+			sourceTree = "<group>";
+		};
+		119DE9A21CAD75530087E0F0 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				119DE9AB1CAD76920087E0F0 /* DefaultEmployeeViewController.swift */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		119DE9A31CAD75530087E0F0 /* HR */ = {
+			isa = PBXGroup;
+			children = (
+				119DE9AD1CAD76CF0087E0F0 /* DefaultHRViewController.swift */,
+			);
+			path = HR;
+			sourceTree = "<group>";
+		};
+		119DE9A41CAD75530087E0F0 /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				119DE9A51CAD758A0087E0F0 /* BaseViewController.swift */,
+			);
+			path = Utills;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		119DE8971CAD6EB70087E0F0 /* CallCentre */ = {
+		119DE8971CAD6EB70087E0F0 /* CallCenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 119DE8AA1CAD6EB70087E0F0 /* Build configuration list for PBXNativeTarget "CallCentre" */;
+			buildConfigurationList = 119DE8AA1CAD6EB70087E0F0 /* Build configuration list for PBXNativeTarget "CallCenter" */;
 			buildPhases = (
 				119DE8941CAD6EB70087E0F0 /* Sources */,
 				119DE8951CAD6EB70087E0F0 /* Frameworks */,
@@ -79,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = CallCentre;
+			name = CallCenter;
 			productName = CallCentre;
-			productReference = 119DE8981CAD6EB70087E0F0 /* CallCentre.app */;
+			productReference = 119DE8981CAD6EB70087E0F0 /* CallCenter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 119DE8931CAD6EB70087E0F0 /* Build configuration list for PBXProject "CallCentre" */;
+			buildConfigurationList = 119DE8931CAD6EB70087E0F0 /* Build configuration list for PBXProject "CallCenter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +180,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				119DE8971CAD6EB70087E0F0 /* CallCentre */,
+				119DE8971CAD6EB70087E0F0 /* CallCenter */,
 			);
 		};
 /* End PBXProject section */
@@ -122,7 +190,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119DE8A61CAD6EB70087E0F0 /* LaunchScreen.storyboard in Resources */,
 				119DE8A31CAD6EB70087E0F0 /* Assets.xcassets in Resources */,
 				119DE8A11CAD6EB70087E0F0 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +202,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				119DE89E1CAD6EB70087E0F0 /* ViewController.swift in Sources */,
 				119DE89C1CAD6EB70087E0F0 /* AppDelegate.swift in Sources */,
+				119DE9A81CAD75DE0087E0F0 /* AuthViewController.swift in Sources */,
+				119DE9A61CAD758A0087E0F0 /* BaseViewController.swift in Sources */,
+				119DE9AA1CAD76010087E0F0 /* DashboardViewController.swift in Sources */,
+				119DE9AE1CAD76CF0087E0F0 /* DefaultHRViewController.swift in Sources */,
+				119DE9AC1CAD76920087E0F0 /* DefaultEmployeeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,14 +220,6 @@
 				119DE8A01CAD6EB70087E0F0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		119DE8A41CAD6EB70087E0F0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				119DE8A51CAD6EB70087E0F0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -247,10 +310,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CallCentre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mikhail-payvin.CallCentre";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikhail-payvin.CallCenter";
+				PRODUCT_NAME = CallCenter;
 			};
 			name = Debug;
 		};
@@ -258,17 +323,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = CallCentre/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mikhail-payvin.CallCentre";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikhail-payvin.CallCenter";
+				PRODUCT_NAME = CallCenter;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		119DE8931CAD6EB70087E0F0 /* Build configuration list for PBXProject "CallCentre" */ = {
+		119DE8931CAD6EB70087E0F0 /* Build configuration list for PBXProject "CallCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				119DE8A81CAD6EB70087E0F0 /* Debug */,
@@ -277,13 +344,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		119DE8AA1CAD6EB70087E0F0 /* Build configuration list for PBXNativeTarget "CallCentre" */ = {
+		119DE8AA1CAD6EB70087E0F0 /* Build configuration list for PBXNativeTarget "CallCenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				119DE8AB1CAD6EB70087E0F0 /* Debug */,
 				119DE8AC1CAD6EB70087E0F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
